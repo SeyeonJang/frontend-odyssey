@@ -1,0 +1,20 @@
+<!-- "Hello World" 출력하는 예시 -->
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="utf-8">
+        <title>Hello world</title>
+        <!-- React 관련 Script 포함 -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.3.1/react.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.3.1/react-dom.min.js"></script>
+        <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    </head>
+    <body>
+        <div id="app"></div>
+        <script type="text/babel">
+            ReactDOM.render(
+                <h1>Hello world</h1>, document.querySelector('#app')
+            );
+        </script>
+    </body>
+</html>
