@@ -69,4 +69,29 @@ false == '0'; // true
 false == null; // false
 false == undefined; // false
 
-//
+// 삼항 조건 연산자 =====
+var x = 10;
+var result = if (x%2) { result = '홀수'; } else { result = '짝수'; }; // SyntaxError
+var result = x%2 ? '홀수' : '짝수';
+console.log(result); // 짝수
+
+// 논리연산자 =====
+true || true; // true
+true || false; // true
+false || true; // true
+false || false; // false
+
+true && true; // true
+false && true; // false
+
+!true; // false
+!false; // true
+
+// 쉼표 연산자 =====
+var x, y, z;
+x=1, y=2, z=3;
+
+// 그룹 연산자 =====
+10 * 2 + 3; //23
+10 * (2+3); //50
+
